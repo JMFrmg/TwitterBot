@@ -20,10 +20,10 @@ tweets_by_key_words_list = []
 if user_input == 1
 	#Connexion
 	client = Twitter::REST::Client.new do |config|
-  	config.consumer_key        = "20enR5dbVFlhaWo8fLbVaHjqI"
-  	config.consumer_secret     = "WWJdZgeOox64uCxKuuQDpE1uELBG9TJ6V4hMZW83pAlhoGX6pc"
-  	config.access_token        = "953598083711094785-ac6yEYGO90ASM3S34WLpwP7JZ9n5z2o"
-  	config.access_token_secret = "UB3KwuWBDrkDu5z32PDdqwdSnj5p8VecGtMcgbt0BUGES"
+  	config.consumer_key        = 
+  	config.consumer_secret     = 
+  	config.access_token        = 
+  	config.access_token_secret = 
 	end
 	p client
 
@@ -38,10 +38,10 @@ if user_input == 1
 elsif user_input == 2
 	#Connexion
 	client = Twitter::REST::Client.new do |config|
-  	config.consumer_key        = "20enR5dbVFlhaWo8fLbVaHjqI"
-  	config.consumer_secret     = "WWJdZgeOox64uCxKuuQDpE1uELBG9TJ6V4hMZW83pAlhoGX6pc"
-  	config.access_token        = "953598083711094785-ac6yEYGO90ASM3S34WLpwP7JZ9n5z2o"
-  	config.access_token_secret = "UB3KwuWBDrkDu5z32PDdqwdSnj5p8VecGtMcgbt0BUGES"
+  	config.consumer_key        = 
+  	config.consumer_secret     = 
+  	config.access_token        = 
+  	config.access_token_secret = 
 	end
 	p client
 	#Le bloc suivant like des tweets de comptes désignés par leurs noms, sous la forme @...
@@ -56,10 +56,10 @@ elsif user_input == 2
 elsif user_input == 3
 #Le bloc suivant ouvre le client streaming
 client = Twitter::Streaming::Client.new do |config|
-  config.consumer_key        = "20enR5dbVFlhaWo8fLbVaHjqI"
-  config.consumer_secret     = "WWJdZgeOox64uCxKuuQDpE1uELBG9TJ6V4hMZW83pAlhoGX6pc"
-  config.access_token        = "953598083711094785-ac6yEYGO90ASM3S34WLpwP7JZ9n5z2o"
-  config.access_token_secret = "UB3KwuWBDrkDu5z32PDdqwdSnj5p8VecGtMcgbt0BUGES"
+  config.consumer_key        = 
+  config.consumer_secret     = 
+  config.access_token        = 
+  config.access_token_secret = 
 end
 
 #Le bloc suivant récupère les ids des 5 nouveaux tweets comportant l'un des quatre mots-clés spécifiés
@@ -70,10 +70,10 @@ end
 	end
 	
 client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = "20enR5dbVFlhaWo8fLbVaHjqI"
-  config.consumer_secret     = "WWJdZgeOox64uCxKuuQDpE1uELBG9TJ6V4hMZW83pAlhoGX6pc"
-  config.access_token        = "953598083711094785-ac6yEYGO90ASM3S34WLpwP7JZ9n5z2o"
-  config.access_token_secret = "UB3KwuWBDrkDu5z32PDdqwdSnj5p8VecGtMcgbt0BUGES"
+  config.consumer_key        = 
+  config.consumer_secret     = 
+  config.access_token        = 
+  config.access_token_secret = 
 end
 p client
 
@@ -84,10 +84,10 @@ client.favorite(tweets_by_key_words_list)
 elsif user_input == 4
 #Le bloc suivant ouvre le client streaming
 client = Twitter::Streaming::Client.new do |config|
-  config.consumer_key        = "20enR5dbVFlhaWo8fLbVaHjqI"
-  config.consumer_secret     = "WWJdZgeOox64uCxKuuQDpE1uELBG9TJ6V4hMZW83pAlhoGX6pc"
-  config.access_token        = "953598083711094785-ac6yEYGO90ASM3S34WLpwP7JZ9n5z2o"
-  config.access_token_secret = "UB3KwuWBDrkDu5z32PDdqwdSnj5p8VecGtMcgbt0BUGES"
+  config.consumer_key        = 
+  config.consumer_secret     = 
+  config.access_token        = 
+  config.access_token_secret = 
 end
 #Le blocs suivant récupère les ids des nouveaux tweets apparaissant dans le fil d'actualité de l'utilisateur
 tweets_by_user_list = []
@@ -96,10 +96,10 @@ client.user do |object|
 	tweets_by_user_list.push(object.id) if object.is_a?(Twitter::Tweet)	
 end			
 client = Twitter::REST::Client.new do |config|
-  	config.consumer_key        = "20enR5dbVFlhaWo8fLbVaHjqI"
-  	config.consumer_secret     = "WWJdZgeOox64uCxKuuQDpE1uELBG9TJ6V4hMZW83pAlhoGX6pc"
-  	config.access_token        = "953598083711094785-ac6yEYGO90ASM3S34WLpwP7JZ9n5z2o"
-  	config.access_token_secret = "UB3KwuWBDrkDu5z32PDdqwdSnj5p8VecGtMcgbt0BUGES"
+  	config.consumer_key        = 
+  	config.consumer_secret     = 
+  	config.access_token        = 
+  	config.access_token_secret = 
 	end
 p client
 client.favorite(tweets_by_user_list)
